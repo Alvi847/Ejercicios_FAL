@@ -1,0 +1,74 @@
+6 3
+0 5 3 4 1 2
+7 2
+6 4 5 6 0 0 8
+5 4
+7 7 7 7 7
+6 2
+5 6 7 6 7 5
+0 0
+
+
+//
+// Nombre y apellidos del alumno
+// Usuario del juez de clase
+// Usuario del juez de examen que has utilizado en la prueba de hoy
+//
+
+#include <iostream>
+#include <fstream>
+#include <vector>
+
+// Aqui explicacion de la función que resuelve el problema. 
+//
+//
+//
+// Aqui la justificación del coste de la función que resuelve el problema
+// 
+// 
+// 
+
+
+// Aqui la función implementada por el alumno para resolver el problema
+
+
+
+
+
+
+
+// Resuelve cada caso de la entrada
+bool resuelveCaso() 
+{
+    int numElem, L;
+    std::cin >> numElem >> L;
+    if (numElem == 0 && L == 0) return false;
+    std::vector<int> v(numElem);
+    for (int &n : v) std::cin >> n;
+    
+    // LLamada a la funcion que resuelve el problema
+    
+    
+    
+    // Escribir el resultado
+    
+
+    return true;
+}
+
+
+int main() {
+
+#ifndef DOMJUDGE
+    std::ifstream in("datos.txt");
+    auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+#endif
+    
+    while (resuelveCaso()) {} //Resolvemos todos los casos
+
+#ifndef DOMJUDGE // para dejar todo como estaba al principio
+    std::cin.rdbuf(cinbuf);
+    system("PAUSE");
+#endif
+    return 0;
+}

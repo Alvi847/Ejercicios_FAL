@@ -1,0 +1,96 @@
+2
+0 100
+100 0
+4
+0 10 5 5
+10 0 2 2
+5 2 0 15
+5 2 15 0
+4
+0 1 10 1
+1 0 5 10
+10 5 0 1
+1 10 1 0
+5
+0 1 5 3 10
+1 0 1 5 5
+5 1 0 1 3
+3 5 1 0 1
+10 5 3 1 0
+0
+
+
+//*****************
+// IMPORTANTE
+//
+// Nombre y apellidos del alumno
+// Usuario del juez de clase
+// Usuario del juez de examen que has utilizado en la prueba de hoy
+//
+//***************************************************
+
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <algorithm>
+
+
+//*******************************
+// Aqui explicacion del algoritmo de vuelta atras. Como es el vector solucion y como se obtiene
+//
+//
+//*******************************
+
+template <class T>
+using tMatriz = std::vector<std::vector<T>>;
+
+
+// Aqui las funciones implementadas por el alumno
+
+
+
+
+bool resuelveCaso () {
+    int numCiudades;
+    std::cin >> numCiudades;
+    if (numCiudades == 0) return false;
+    // Precio billetes entre ciudades
+    tMatriz<int> billetes(numCiudades, std::vector<int>(numCiudades));
+    for (int i = 0; i < numCiudades; ++i) 
+        for (int j = 0; j < numCiudades; ++j) {
+            std::cin >> billetes[i][j];
+        }
+    
+    // Preparacion de los datos para la llamada a la funcion que resuelve el problema
+    
+    
+    
+    // LLamada a la funcion que resuelve el problema
+    
+    
+    
+    // Escribir el resultado
+
+    
+    return true;
+}
+
+
+int main() {
+    // Para la entrada por fichero.
+    #ifndef DOMJUDGE
+     std::ifstream in("datos.txt");
+     auto cinbuf = std::cin.rdbuf(in.rdbuf()); 
+     #endif
+         
+    while (resuelveCaso())
+        ;
+    
+    // Para restablecer entrada. 
+     #ifndef DOMJUDGE // para dejar todo como estaba al principio
+     std::cin.rdbuf(cinbuf);
+     system("PAUSE");
+     #endif
+         
+    return 0;
+}

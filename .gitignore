@@ -1,0 +1,10 @@
+# Quito ejecutables
+*.exe
+
+# Quito dos ejercicios que tenía aquí del curso anterior
+DIvide y vencerás 1.cpp
+Práctica 2.cpp
+
+# Quito las carpetas que crea vscode automáticamente
+
+*.vscode

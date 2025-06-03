@@ -1,0 +1,71 @@
+4 2 6
+2 1
+4 2 5
+2 1
+5 3 7
+2 1 3
+5 3 8
+2 1 3
+5 3 17
+5 4 3
+6 4 27
+6 5 4 5
+0
+
+
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <stdio.h>
+#include <utility>
+#include <cstdlib>
+
+
+// Agrupar los datos en structs por datos de entrada, datos actuales, marcaje y solMejor
+void resolver (...) {
+
+
+
+
+}
+
+
+bool resuelveCaso() {
+    int longitud, numColores,consumoMax;
+    std::cin >> longitud;
+    if (longitud == 0) return false;
+    std::cin >> numColores >> consumoMax;
+    std::vector<int> consumoLuces(numColores);
+    for (int & i: consumoLuces) std::cin >> i;
+    
+
+    .....
+    
+    
+    
+    
+    return true;
+}
+
+int main() {
+    // Para la entrada por fichero.
+    // Comentar para acepta el reto
+    #ifndef DOMJUDGE
+     std::ifstream in("sample.txt");
+     auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
+     #endif
+    
+    
+    while (resuelveCaso())
+        ;
+    
+    
+    // Para restablecer entrada. Comentar para acepta el reto
+    
+     #ifndef DOMJUDGE // para dejar todo como estaba al principio
+     std::cin.rdbuf(cinbuf);
+     //system("PAUSE");
+     #endif
+     
+    return 0;
+}
