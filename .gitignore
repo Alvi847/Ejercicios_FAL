@@ -8,3 +8,7 @@ Práctica 2.cpp
 # Quito las carpetas que crea vscode automáticamente
 
 *.vscode
+
+# Quito las carpetas de teoría y cuestionarios. No estoy seguro de tener permiso para subir esto, al fin y al cabo no es mío
+/Teoria
+/Cuestionarios
